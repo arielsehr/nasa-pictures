@@ -1,3 +1,7 @@
-#nasa picture generator
+# nasa picture generator
 
 showing you i can grab info from an API...wow!
+
+## nothing fancy
+
+except it looks cool and i'm going to add a night mode switcher
