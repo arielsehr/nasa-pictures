@@ -306,7 +306,7 @@ template {
 
 main {
   width: 940px;
-  max-width: 100%;
+  max-width: 80%;
   margin: 0px auto 50px auto; 
   display: flex;
   flex-direction: column;
@@ -348,3 +348,6 @@ iframe {
   box-shadow: 1px 0px 0px #000, 0px 1px 0px #000, 2px 1px 0px #000, 1px 2px 0px #000, 3px 2px 0px #000, 2px 3px 0px #000, 4px 3px 0px #000, 3px 4px 0px #000, 5px 4px 0px #000, 4px 5px 0px #000, 6px 5px 0px #000, 5px 6px 0px #000, 7px 6px 0px #000, 6px 7px 0px #000, 8px 7px 0px #000, 7px 8px 0px #000, 9px 8px 0px #000, 8px 9px 0px #000;
 }
 
+@media screen and (max-width: 480px) {
+
+}
