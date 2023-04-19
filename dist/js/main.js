@@ -67,3 +67,17 @@ apod.init();
 $('#randBtn').on('click', function(){
     apod.getRequest();
 });
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+
+    const body = document.getElementById('body');
+    if (e.target.checked) {
+        body.classList.toggle('nightmode');
+    }  else {
+        body.classList.toggle('nightmode');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);

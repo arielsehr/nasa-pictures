@@ -348,6 +348,78 @@ iframe {
   box-shadow: 1px 0px 0px #000, 0px 1px 0px #000, 2px 1px 0px #000, 1px 2px 0px #000, 3px 2px 0px #000, 2px 3px 0px #000, 4px 3px 0px #000, 3px 4px 0px #000, 5px 4px 0px #000, 4px 5px 0px #000, 6px 5px 0px #000, 5px 6px 0px #000, 7px 6px 0px #000, 6px 7px 0px #000, 8px 7px 0px #000, 7px 8px 0px #000, 9px 8px 0px #000, 8px 9px 0px #000;
 }
 
-@media screen and (max-width: 480px) {
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
 
+  .theme-switch-wrapper p {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #d9b0ca;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+#body.nightmode {
+  background-color: black;
+  color: white;
+}
+
+#body.nightmode #randBtn {
+  padding: 1rem;
+  margin: 2rem;
+  border: solid 2px #FFFFFF !important;
+  color: white;
+  background-color: black;
+  transition: all 0.3s ease;
+  box-shadow: 1px 0px 0px #FFFFFF, 0px 1px 0px #FFFFFF, 2px 1px 0px #FFFFFF, 1px 2px 0px #FFFFFF, 3px 2px 0px #FFFFFF, 2px 3px 0px #FFFFFF, 4px 3px 0px #FFFFFF, 3px 4px 0px #FFFFFF, 5px 4px 0px #FFFFFF, 4px 5px 0px #FFFFFF, 6px 5px 0px #FFFFFF, 5px 6px 0px #FFFFFF, 7px 6px 0px #FFFFFF, 6px 7px 0px #FFFFFF, 8px 7px 0px #FFFFFF, 7px 8px 0px #FFFFFF, 9px 8px 0px #FFFFFF, 8px 9px 0px #FFFFFF;
 }
